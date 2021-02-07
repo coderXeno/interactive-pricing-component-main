@@ -1,0 +1,383 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 15px;
+	font-family: "Manrope", sans-serif;
+	width: 100%;
+	background-size: cover;
+	color: hsl(225, 20%, 60%);
+}
+.bg {
+	background: url(../images/bg-pattern.svg) no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 40vh;
+	position: absolute;
+	z-index: -1;
+	left: 10px;
+	border-bottom-left-radius: 250px;
+}
+.wrapper {
+	padding: 100px;
+}
+header {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+header h1,
+.number {
+	font-weight: 800;
+	color: hsl(226, 40%, 22%);
+	font-size: 30px;
+}
+header h2 {
+	font-weight: 600;
+}
+.bubbles {
+	background: url(../images/pattern-circles.svg);
+	width: 146px;
+	height: 145px;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	z-index: -1;
+}
+
+.container {
+	background: hsl(0, 0%, 100%);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	margin: auto;
+	margin-top: 100px;
+	width: 60%;
+	border-radius: 10px;
+	-webkit-box-shadow: 1px 3px 15px 0px #0000001f;
+	box-shadow: 1px 3px 15px 0px #0000001f;
+}
+.price {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.number {
+	margin-right: 5px;
+}
+.container-top {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 80%;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+	padding: 10px;
+}
+.slider-wrapper {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+#slider {
+	width: 60%;
+	padding: 10px;
+}
+input[type="range"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 0;
+}
+input[type="range"]:focus {
+	outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 40px;
+	width: 40px;
+	border: none;
+	cursor: pointer;
+	margin-top: -16px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+	background: url("../images/icon-slider.svg") no-repeat, hsl(174, 86%, 45%);
+	background-position: 9px 13px;
+	border-radius: 50%;
+	-webkit-box-shadow: 0 0 20px #fff, 0 0 10px hsl(174, 86%, 45%),
+		0 0 70px hsl(174, 86%, 45%);
+	box-shadow: 0 0 20px #fff, 0 0 10px hsl(174, 86%, 45%),
+		0 0 70px hsl(174, 86%, 45%);
+}
+input[type="range"]::-webkit-slider-runnable-track {
+	background: hsl(174, 77%, 80%);
+	height: 7px;
+	border-radius: 20px;
+}
+.monthly {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	font-size: 15px;
+	width: 60%;
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+.bottom {
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	padding: 30px;
+}
+hr {
+	background: hsl(225deg 20% 60% / 37%);
+	width: 100%;
+	margin: 30px 0;
+	border: none;
+	height: 1px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.wrapper {
+		padding: 50px 0;
+	}
+	.container {
+		width: 80%;
+		position: relative;
+		padding: 20px 0;
+	}
+	.container-top .first {
+		margin-bottom: 60px;
+	}
+	.container-top {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		width: 100%;
+	}
+	.slider-wrapper {
+		position: absolute;
+		top: 70px;
+	}
+	.slider::before {
+		bottom: 4px;
+	}
+	.monthly {
+		width: 100%;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	.discount {
+		background: #ff8d0038;
+		padding: 5px 10px;
+		border-radius: 20px;
+		font-size: 10px;
+		margin-left: 10px;
+		color: #f58800;
+	}
+	.bottom {
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	.bottom p {
+		padding: 10px;
+	}
+	.bottom button {
+		border: none;
+		background: #130038;
+		color: white;
+		padding: 12px 50px;
+		border-radius: 20px;
+		margin-top: 30px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+	.wrapper {
+		padding: 50px 0;
+	}
+	.container {
+		width: 80%;
+		position: relative;
+		padding: 20px 0;
+	}
+	.container-top .first {
+		margin-bottom: 60px;
+	}
+	.container-top {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		width: 100%;
+	}
+	.slider-wrapper {
+		position: absolute;
+		top: 70px;
+	}
+	.slider::before {
+		bottom: 4px;
+	}
+	.monthly {
+		width: 100%;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+	}
+	.discount {
+		background: #ff8d0038;
+		padding: 5px 10px;
+		border-radius: 20px;
+		font-size: 10px;
+		margin-left: 10px;
+		color: #f58800;
+	}
+	.bottom {
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+	}
+	.bottom p {
+		padding: 10px;
+	}
+	.bottom button {
+		border: none;
+		background: #130038;
+		color: white;
+		padding: 12px 50px;
+		border-radius: 20px;
+		margin-top: 30px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+	.container {
+		width: 50%;
+	}
+	.container-top {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	.container-top .first {
+		margin-bottom: 0;
+	}
+	.slider-wrapper {
+		position: unset;
+	}
+	.slider {
+		height: 21px;
+	}
+	.slider::before {
+		bottom: 3px;
+	}
+	.monthly {
+		-webkit-box-pack: end;
+		-ms-flex-pack: end;
+		justify-content: flex-end;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		font-size: 12px;
+		padding-right: 10%;
+	}
+	.discount::after {
+		content: " discount";
+	}
+	.bottom {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		-ms-flex-pack: justify;
+		justify-content: space-between;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+	.bottom button {
+		margin-top: 0;
+	}
+	#slider {
+		margin-bottom: 20px;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
