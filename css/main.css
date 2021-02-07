@@ -53,7 +53,8 @@ header h1,
 	color: hsl(226, 40%, 22%);
 	font-size: 30px;
 }
-header h1 {
+header h1,
+h2 {
 	text-align: center;
 }
 header h2 {
