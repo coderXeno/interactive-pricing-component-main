@@ -8,7 +8,11 @@ price.innerHTML = `$${money[slider.value]}`;
 slider.oninput = function () {
 	views.innerHTML = `$ ${pageviews[this.value]} &nbsp; P A G E V I E W S`;
 	price.innerHTML = `$${money[slider.value]}`;
+	document.body.style.touchAction = "none";
 };
+slider.addEventListener("mouseleave", () => {
+	document.body.style.touchAction = "auto";
+});
 // let inter = null;
 // const setNumber = () => {
 // 	inter = setInterval(() => {
