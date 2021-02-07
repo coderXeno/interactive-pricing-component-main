@@ -10,7 +10,10 @@ slider.oninput = function () {
 	price.innerHTML = `$${money[slider.value]}`;
 	document.body.style.touchAction = "none";
 };
-slider.addEventListener("mouseleave", () => {
+slider.addEventListener("touchstart", function () {
+	document.body.style.touchAction = "none";
+});
+slider.addEventListener("touchend", () => {
 	document.body.style.touchAction = "auto";
 });
 // let inter = null;
